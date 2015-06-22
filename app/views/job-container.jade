@@ -1,0 +1,17 @@
+- each job in jobs
+  div.sub-container.row
+    div.title.small-12.large-12.columns 
+      p #{job.title}
+    
+    div.description.display.small-12.large-12.columns
+      div.row
+        +skillsBlock("Skills and Requirements", job.skills)
+        +skillsBlock("Preferred Skills", job.pskills)
+      button.apply.button(value="apply") Apply
+
+mixin skillsBlock(title, loopItems)
+  div.block.small-12.large-12.columns
+    p= title
+    ul
+      - each skill in loopItems
+        li  #{skill}

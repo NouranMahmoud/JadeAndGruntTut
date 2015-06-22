@@ -1,3 +1,44 @@
-{
-  
-}
+[
+  {
+    "title": "Software developer", 
+    "description": "bla bla bla", 
+    "skills": [
+      "Knows JavaScript's type system well and has experience with more sophisticated type systems.",
+      "Has Functional Programming experience",
+      "React, Flux, Backbone"
+    ],
+    "pskills": [
+      "Knows JavaScript's type system well and has experience with more sophisticated type systems.",
+      "Has Functional Programming experience",
+      "React, Flux, Backbone"
+    ]
+  },
+  {
+    "title": "Software Engineer", 
+    "description": "bla bla bla", 
+    "skills": [
+      "Knows JavaScript's type system well and has experience with more sophisticated type systems.",
+      "Has Functional Programming experience",
+      "React, Flux, Backbone"
+    ],
+    "pskills": [
+      "Knows JavaScript's type system well and has experience with more sophisticated type systems.",
+      "Has Functional Programming experience",
+      "React, Flux, Backbone"
+    ]
+  },
+  {
+    "title": "Frontend developer", 
+    "description": "bla bla bla", 
+    "skills": [
+      "Knows JavaScript's type system well and has experience with more sophisticated type systems.",
+      "Has Functional Programming experience",
+      "React, Flux, Backbone"
+    ],
+    "pskills": [
+      "Knows JavaScript's type system well and has experience with more sophisticated type systems.",
+      "Has Functional Programming experience",
+      "React, Flux, Backbone"
+    ]
+  }
+]
