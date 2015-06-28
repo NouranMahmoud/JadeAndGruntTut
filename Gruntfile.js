@@ -17,8 +17,8 @@ module.exports = function(grunt) {
     },
     copy: {
       build: {
-        cwd: 'source',
-        src: [ '**', '!**/*.jade' ],
+        cwd: 'app',
+        src: [ 'js/*','style/*', '!**/*.jade' ],
         dest: 'build',
         expand: true
       }
@@ -49,5 +49,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Default task.
-  grunt.registerTask('default',null, ['jade','connect','watch']);
+  grunt.registerTask('default',"Convert Jade templates into html templates", ['jade', 'copy' ,'connect','watch']);
 };
