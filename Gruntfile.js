@@ -30,6 +30,15 @@ module.exports = function(grunt) {
         files: ['app/views/**/*.jade'],
         tasks: ['jade']
       }
+    },
+    connect: {
+      server: {
+        options: {
+          port: 4000,
+          base: 'build',
+          hostname: '*'
+        }
+      }
     }
   }); 
   
@@ -37,7 +46,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-jade");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-contrib-copy");
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Default task.
-  grunt.registerTask('default',null, ['jade','watch']);
+  grunt.registerTask('default',null, ['jade','connect','watch']);
 };
